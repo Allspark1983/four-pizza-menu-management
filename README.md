@@ -51,3 +51,7 @@ Runtime: React, React DOM, Axios, Wouter and vanilla Bootstrap CSS. Vite and its
 ## Submission
 
 Submit this repository URL and a ZIP of the source and required assets through LMS. Exclude node_modules, dist, credentials and .env files. The final academic report should include screenshots and verified test results from the completed app.
+
+## Visual design
+
+The dark-green sidebar, terracotta actions, dashboard panels and size illustrations are adapted from the supplied FourPizza_Backend_Assignment_Submission.zip. The EJS interface is rebuilt as React components; this version still uses local JSON and parent-owned state, not the original backend.

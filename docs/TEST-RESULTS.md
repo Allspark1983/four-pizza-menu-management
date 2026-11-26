@@ -22,3 +22,5 @@ Browser checks were run using Playwright against Chromium, with desktop 1440×10
 | Uncaught browser page errors | NONE |
 
 Desktop dashboard and mobile menu screenshots were visually inspected. Production deployment, the user's Codespace and LMS submission have not been tested. This is an in-memory frontend; sample data resets on refresh by design.
+
+The original database-assessment visual design was adapted into React, and the production build and browser checks above were rerun successfully. Desktop dashboard and form screenshots were visually inspected after the redesign.
