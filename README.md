@@ -55,3 +55,5 @@ Submit this repository URL and a ZIP of the source and required assets through L
 ## Visual design
 
 The dark-green sidebar, terracotta actions, dashboard panels and size illustrations are adapted from the supplied FourPizza_Backend_Assignment_Submission.zip. The EJS interface is rebuilt as React components; this version still uses local JSON and parent-owned state, not the original backend.
+
+The original pizza-hero.webp and fourpizza-badge.webp assets are reused from the fourpizza-database-assignment repository. The banner and interface use tomato red (#C63D2F), warm cream (#FFF6E8), charcoal (#252525), white and golden crust (#E8B45B).

@@ -54,7 +54,7 @@ export default function App() {
   return <>
     <a className="skip-link" href="#main">Skip to content</a>
     <aside className="sidebar" aria-label="Workspace navigation">
-      <Link href="/" className="brand"><span className="brand-mark" aria-hidden="true">4</span><span><span className="brand-name">four pizza<span className="brand-period">.</span></span><span className="brand-caption">MENU WORKSPACE</span></span></Link>
+      <Link href="/" className="brand"><img className="brand-logo" src="/images/fourpizza-badge.webp" alt="" /><span><span className="brand-name">four pizza<span className="brand-period">.</span></span><span className="brand-caption">MENU WORKSPACE</span></span></Link>
       <div className="nav-label">WORKSPACE</div>
       <nav aria-label="Main navigation" className="main-nav">
         {[['/', 'Dashboard', 'dashboard'], ['/pizzas', 'Pizza menu', 'pizza'], ['/add-pizza', 'Add pizza', 'plus']].map(([href, label, icon]) => <Link key={href} href={href} className={`nav-link ${location === href ? 'active' : ''}`} aria-current={location === href ? 'page' : undefined}><Icon name={icon} /><span>{label}</span></Link>)}
@@ -65,6 +65,10 @@ export default function App() {
     <div className="workspace">
     <header className="topbar"><span className="topbar-title">Four Pizza <span>/</span> {pageTitle}</span><span className="demo-badge">Sample menu · SGD</span></header>
     <main id="main" className="main-content" tabIndex={-1}>
+      {(location === '/' || location === '/pizzas') && <section className="food-banner" aria-labelledby="banner-title">
+        <div className="banner-copy"><p className="banner-kicker">JALAN LOKAM · SINGAPORE</p><h2 id="banner-title">Pizza for the<br/><em>whole table.</em></h2><p>A little care behind every slice.<br/>Your menu, freshly managed.</p><Link href={location === '/' ? '/pizzas' : '/add-pizza'} className="button banner-action">{location === '/' ? 'Explore the menu' : 'Add a pizza'} <span aria-hidden="true">→</span></Link></div>
+        <img className="banner-image" src="/images/pizza-hero.webp" alt="Pepperoni pizza with a slice being lifted" fetchPriority="high"/>
+      </section>}
       {notice && <div className="alert alert-success d-flex justify-content-between align-items-center" role="status">{notice}<button type="button" className="btn-close" aria-label="Dismiss notification" onClick={() => setNotice('')} /></div>}
       {loading ? <div className="panel p-5" role="status">Loading your menu…</div> : error ? <div className="alert alert-danger" role="alert">{error}<button className="btn btn-outline-danger ms-3" onClick={() => setAttempt(a => a + 1)}>Retry</button></div> :
         // LO5: Four client-side routes. App remains mounted across route changes.
