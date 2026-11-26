@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pizza-1",
+    "name": "Margherita",
+    "size": 10,
+    "price": 15.9,
+    "description": "Tomato, mozzarella and basil. A timeless favourite."
+  },
+  {
+    "id": "pizza-2",
+    "name": "Chicken Supreme",
+    "size": 14,
+    "price": 25.9,
+    "description": "Chicken, mushrooms, peppers and mozzarella."
+  },
+  {
+    "id": "pizza-3",
+    "name": "Hawaiian",
+    "size": 10,
+    "price": 18.9,
+    "description": "Chicken ham, pineapple and melted mozzarella."
+  },
+  {
+    "id": "pizza-4",
+    "name": "Mushroom Garden",
+    "size": 8,
+    "price": 11.9,
+    "description": "Mushrooms, peppers and a generous layer of cheese."
+  },
+  {
+    "id": "pizza-5",
+    "name": "Spicy Chicken",
+    "size": 14,
+    "price": 26.9,
+    "description": "Spiced chicken and peppers with a bold tomato base."
+  },
+  {
+    "id": "pizza-6",
+    "name": "Four Cheese",
+    "size": 8,
+    "price": 12.9,
+    "description": "A rich blend of cheeses on our signature base."
+  }
+]
